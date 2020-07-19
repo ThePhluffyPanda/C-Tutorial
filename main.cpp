@@ -20,9 +20,17 @@
 
 using namespace std;    //
 
+int globalVariable = 0; // Global variable
+
+const double PI = 3.141;  // Constant variable
+
 int main(int argc, char** argv) {
 
     cout << "Hello Frank" << endl;
+
+    bool married = false;
+    char myGrade = 'A';
+    
 
     return 0;
 
