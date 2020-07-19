@@ -28,48 +28,25 @@ const double PI = 3.141;  // Constant variable
 
 int main(int argc, char** argv) {
 
-    cout << "Hello Frank" << endl;
+    // Conditional Operators: > < >= <= == !=
+    // Logical Operators: && || !
 
-    bool married = false;
-    char myGrade = 'A';
+    string sAge;
 
-    float f1 = 1.1111111;
-    float f2 = 1.1111111;
+    cout << "Enter your age: ";
 
-    printf("Sum of two floats = %.7f\n", (f1 + f2));  // lost precision on the 7th decimal place
+    cin >> sAge;
+    int nAge = stoi(sAge);
 
-    // doubles accurate up to 15 points of precision
-    double d1 = 1.111111111111111;
-    double d2 = 1.111111111111111;
-
-    printf("Sum of two doubles = %.16f\n", (d1 + d2));  // lost precision on the 16th decimal place
-
-    //auto whatAmI = true;    // auto data type selection 
-    
-    cout << "int Byte: " << sizeof(int) << endl;    // 4 bytes in an integer
-
-    printf("%c %d %5d %.3f %s\n", 
-            'A', 10, 5, 3.1234, "Sup");
-
-    string q1 = "Enter a Number: ";
-    string num1, num2;
-
-    cout << q1;
-    cin >> num1;
-    cout << "Enter another number: ";
-    cin >> num2;
-
-    //convert strings into intergers
-    int nNum1 = stoi(num1);
-    int nNum2 = stoi(num2);
-
-    printf("%d + %d = %d", 
-            nNum1, nNum2, (nNum1 + nNum2));
-
-    
-
-
-
+    if ((nAge >= 1) && (nAge <= 18)) {
+            cout << "You are young..." << endl;
+    } else if ((nAge >= 21) && (nAge <= 50)) {
+            cout << "Important Birthday" << endl;
+    } else if ((nAge >= 65)) {
+            cout << "You are old..." << endl;
+    } else {
+            cout << "Not an Important Birthday" << endl;
+    }
 
 
     return 0;
