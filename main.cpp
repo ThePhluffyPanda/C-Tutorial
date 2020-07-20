@@ -28,25 +28,27 @@ const double PI = 3.141;  // Constant variable
 
 int main(int argc, char** argv) {
 
-    // Conditional Operators: > < >= <= == !=
-    // Logical Operators: && || !
+    int arryNums1[10] = {1};
+    int arryNums2[] = {1, 2, 3, 4};    
+    int arryNums3[5] = {8, 9};
 
-    string sAge;
+    cout << "1st Value: " << arryNums1[0] << endl;
+    arryNums1[0] = 7;
+    cout << "1st Value: " << arryNums1[0] << endl;
 
-    cout << "Enter your age: ";
+    int arryNums4[2][2][2] = {{{1,2}, {3,4}},
+                                {{5,6}, {7,8}}};
+    
+    cout << arryNums4[0][0][0] << endl;
+    cout << arryNums4[0][0][1] << endl;
+    cout << arryNums4[0][1][0] << endl;
+    cout << arryNums4[0][1][1] << endl;
+    cout << arryNums4[1][0][0] << endl;
+    cout << arryNums4[1][0][1] << endl;
+    cout << arryNums4[1][1][0] << endl;
+    cout << arryNums4[1][1][1] << endl;    
 
-    cin >> sAge;
-    int nAge = stoi(sAge);
-
-    if ((nAge >= 1) && (nAge <= 18)) {
-            cout << "You are young..." << endl;
-    } else if ((nAge >= 21) && (nAge <= 50)) {
-            cout << "Important Birthday" << endl;
-    } else if ((nAge >= 65)) {
-            cout << "You are old..." << endl;
-    } else {
-            cout << "Not an Important Birthday" << endl;
-    }
+        
 
 
     return 0;
